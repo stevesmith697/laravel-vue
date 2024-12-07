@@ -44,4 +44,13 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    protected $appends = [
+        'formatted_created_at'
+    ];
+
+    public function getFormattedCreatedAtAttribute()
+    {
+        return $this->created_at->format(config("app.date_format"));
+    }
 }

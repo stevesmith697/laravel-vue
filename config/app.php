@@ -67,6 +67,8 @@ return [
 
     'timezone' => env('APP_TIMEZONE', 'UTC'),
 
+    'date_format' => 'Y-m-d',
+
     /*
     |--------------------------------------------------------------------------
     | Application Locale Configuration
